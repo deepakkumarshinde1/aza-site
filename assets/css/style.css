@@ -1,0 +1,499 @@
+/* =====================
+
+colors
+#495057 (buttons )& text
+
+#058ED4 (Main Title)
+
+bagrou
+#DFF7FA
+
+AZA Colors #00BFFE (blue)
+#0C75FD Dark Blue)
+
+=============================== */
+
+:root {
+  /* Own Color */
+  --light-blue: #dff7fa;
+  --border: #74747475;
+  --text-color: #3a3a3a;
+  /* Aza Color */
+  --btn-text-color: #495057;
+  --title: #058ed4;
+  --background: #f5feff;
+  --dark-blue: #0c75fd;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 62.5%; */
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* owl css */
+
+.deep-main-carousel {
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  position: relative;
+}
+.deep-my-carousel {
+  width: 100%;
+  height: 100%;
+}
+.deep-my-carousel .item {
+  width: 100%;
+  height: 500px;
+  background-color: red;
+  margin: 0;
+}
+.deep-my-carousel .item img {
+  width: 100%;
+  height: 100%;
+}
+.deep-main-carousel > .deep-preview,
+.deep-main-carousel > .deep-next {
+  background-color: transparent;
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  font-size: 72px;
+  color: rgb(255, 255, 255);
+  border: 0px;
+  margin: 0 4px;
+}
+.deep-main-carousel > .deep-preview:active,
+.deep-main-carousel > .deep-next:active {
+  transform: scale(0.9);
+}
+.deep-preview {
+  left: 0;
+}
+.deep-next {
+  right: 0;
+}
+
+/* owl css */
+
+#main {
+  padding-right: var(--bs-gutter-x, 0rem);
+  padding-left: var(--bs-gutter-x, 0rem);
+}
+
+.aka-head-title {
+  color: var(--title);
+}
+
+/* ====== NavBar  Start     ====== */
+.aka-header {
+  padding: 0.5rem 1.8rem;
+}
+.aka-header .aka-logo {
+  height: 5rem;
+}
+
+.aka-navbar-list {
+  list-style: none;
+}
+
+.aka-navbar-link:link,
+.aka-navbar-link:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--btn-text-color);
+  transition: all 0.3s;
+}
+
+.aka-navbar-link:hover,
+.aka-navbar-link:active {
+  color: var(--dark-blue);
+}
+
+.aka-mobile-navbar-btn {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.aka-mobile-nav-icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--btn-text-color);
+}
+
+.aka-mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+/* ===========  Navbar End   ======== */
+
+/* =========== Image Section Start   ======== */
+.aka-main-banner > img {
+  width: 100%;
+  /* object-fit: cover; */
+}
+/* ===========  Image Section End   ======== */
+
+/*====  Methodology Start   =====*/
+.aka-methodology-active {
+  background-color: var(--title);
+  color: #ffffff;
+  border-right: 1px solid lightgrey;
+  height: 176px;
+}
+.aka-methodology {
+  background-color: #efeeec;
+  border-right: 1px solid lightgrey;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition-property: transform background-color;
+  transition-duration: 0.5s;
+}
+.aka-methodology i {
+  height: 60px;
+  color: #49a5d6 !important;
+}
+.aka-methodology:hover {
+  transform: scale(1.05);
+  background-color: #0069d9;
+}
+.aka-methodology:hover * {
+  color: white !important;
+}
+/*====  Methodology End   ====*/
+
+/*====    Popular Cources Start   =====*/
+
+.aka-all-cources > li > a,
+.aka-cources-dow-list > li > a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.aka-all-cources > li > a:hover,
+.aka-cources-dow-list > li > a:hover {
+  text-decoration: underline;
+}
+
+.aka-all-cources,
+.aka-cources-dow-list {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.aka-all-cources > li,
+.aka-cources-dow-list > li {
+  color: #495057;
+  border-radius: 2px;
+  margin-bottom: 7px;
+  padding-left: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  box-shadow: 1px 1px 2px #ccc;
+  font-family: arial;
+  font-size: 12px;
+  display: block;
+  background: url(/assets/img/List-styles/vAro.png) 7px 7px no-repeat #fff;
+  transition: unset;
+}
+
+.aka-cources-info-dow-title,
+.aka-cources-title {
+  background-color: var(--title);
+}
+
+.aka-all-cources {
+  list-style: none;
+}
+
+.aka-cource-list-style {
+  list-style: none;
+}
+/*====    Popular Cources End     =====*/
+
+/* ====   Learning Options Start ====== */
+.aka-learning-iconBox {
+  box-shadow: -0.0625rem 0 0.625rem 0 rgb(0 0 0 / 7%),
+    0.3125rem 1.25rem 2.5rem 0 rgb(0 0 0 / 4%) !important;
+  border-radius: 1rem !important;
+  padding: 20px 10px;
+  height: 100%;
+  text-align: center;
+}
+
+.aka-learning-iconBox > a {
+  text-decoration: none;
+  color: black;
+}
+/* ====   Learning Options End ====== */
+
+/* ====   Our Client Start    ====== */
+
+.aka-client-logo {
+  padding: 36px 17px;
+  border: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  overflow: hidden;
+  background: #fff;
+  height: 116px;
+  box-shadow: 1px 2px 3px #ccc;
+  margin: 10px;
+  transition: border 0.3s ease-in-out;
+}
+.aka-client-logo:hover {
+  border: 4px solid #eee;
+  border-top-color: #d0d6d9;
+  border-right-color: #d0d6d9;
+}
+.aka-client-logo img {
+  /* padding: 36px 17px; */
+  transition: transform 0.4s ease-in-out;
+}
+.aka-view-all-client-btn {
+  /* background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+  padding: 0.2rem 1rem;
+  border-radius: 7px;
+  border: none; */
+}
+.aka-view-all-client-btn:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+/* ====   Our Client End    ===== */
+/* ====   Our Target Completed Start  ===== */
+.aka-grad1 {
+  margin-bottom: 8px;
+}
+.satisfac-img {
+  margin-bottom: 12px;
+}
+.group-img {
+  margin-bottom: 11px;
+}
+.edu-img {
+  margin-bottom: 20px;
+}
+.book-img {
+  margin-bottom: 14px !important;
+  margin-top: 4px;
+}
+.aka-counters {
+  margin: 0 5rem;
+}
+.aka-counters > div > span {
+  color: #565656;
+}
+.aka-counter-caption {
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #565656;
+  color: var(--background);
+  padding: 5px;
+  border-radius: 5px;
+}
+/* ====   Our Target Completed End  ===== */
+
+/* ===========================================
+Responsive Codes 
+======================================= */
+
+/* 980px  */
+
+@media (max-width: 62em) {
+  /* ===========  Navbar Start   ======== */
+  .aka-mobile-navbar-btn {
+    display: block;
+    z-index: 999;
+  }
+
+  .aka-header {
+    /* position: relative; */
+  }
+
+  .aka-header .logo {
+    width: 10px;
+  }
+
+  .aka-navbar {
+    /* display: none; */
+    width: 100vw;
+    height: 100vh;
+    background: #e7f5ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to get the tranisition  */
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+
+    opacity: 10;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .aka-navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .active .aka-navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .aka-mobile-navbar-btn .aka-mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .active .aka-mobile-navbar-btn .aka-mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+  /* ===========  Navbar End   ======== */
+}
+
+/* Below 560px  */
+@media (max-width: 35em) {
+  /* ===========  Navbar Start   ======== */
+  .aka-header {
+    padding: 0 2.4rem;
+  }
+  /* ===========  Navbar End   ======== */
+}
+
+.aka-light-blue {
+  background: #dff7fa;
+  border: 1px solid #eee;
+}
+.aka-mail {
+  justify-content: space-evenly;
+  background-color: var(--light-blue);
+  padding: 3rem 7rem;
+}
+
+.aka-input-email > form > input {
+  border: 0.1rem solid var(--border);
+  border-radius: 0.8rem;
+  margin-right: 0rem;
+}
+
+.aka-award {
+  box-shadow: 0 0 10px 0 gray;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  width: 30%;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.aka-award > .aka-details {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  border: 1px solid gray;
+  left: -100%;
+  transition: left 1s;
+}
+.aka-award:hover > .aka-details {
+  left: 0%;
+}
+.aka-award:hover {
+  box-shadow: 0 0 10px 0 red;
+}
+.aka-details li::before {
+  content: "\f00c";
+  display: inline-block;
+  margin-right: 5px;
+  font-family: "FontAwesome";
+  color: red;
+}
+.aka-award > img {
+  width: 80%;
+  height: 70%;
+  border: 0;
+  display: inline-block;
+  margin: auto;
+  position: relative;
+  top: 30px;
+}
+.aka-award > .extra-width {
+  width: 60%;
+}
+
+.aka-award .aka-light-blue {
+  border: 1px solid #0c74fd59;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.aka-card {
+  width: 20rem;
+  height: 28rem;
+  background-color: #414141;
+}
+.aka-testimonial-img .aka-testimonial-photo {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.aka-ul {
+  list-style-image: url("/assets/img/angle-right.jpg");
+  font-size: 0.8rem;
+}
+
+.aka-footer-menu {
+  border-bottom: 1px solid #0595ad;
+}
+
+.aka-footer-baground {
+  background-color: #217280;
+}
+.aka-verified-img {
+  width: 5rem;
+}
+
+.aka-security-text {
+  font-size: 0.7rem;
+}
+
+.aka-all-rights-reserved {
+  background-color: #174f59;
+}

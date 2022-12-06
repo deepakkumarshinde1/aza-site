@@ -1,0 +1,147 @@
+:root {
+  /* Own Color */
+  --light-blue: #dff7fa;
+  --border: #74747475;
+  /* Aza Color */
+  --btn-text-color: #495057;
+  --title: #058ed4;
+  --background: #f5feff;
+  --dark-blue: #0c75fd;
+  --light-gray: #e9ecef;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 62.5%; */
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.aka-light-gray {
+  background-color: var(--light-gray);
+}
+.aka-path-location > a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 0rem;
+}
+.aka-path-location > a > i {
+  background-color: var(--title);
+}
+
+/* =========  Contact Line With WP Number Start ======= */
+.aka-title-color {
+  background-color: var(--title);
+  width: 100%;
+}
+.aka-title-color > p {
+  width: fit-content;
+  font-weight: 500;
+  padding: 0 1rem;
+  margin-bottom: 0rem;
+}
+.aka-title-color > p > i {
+  border-radius: 50%;
+  font-size: 1.3rem;
+}
+/* =========  Contact Line With WP Number End ======= */
+
+/* =======Contact Types Start   ========= */
+.aka-contact-types {
+  padding: 0 15px;
+}
+
+.aka-contact-type {
+  border: 1px solid #dcbafd;
+  border-radius: 10px;
+  box-shadow: 1px 4px 20px -9px #49358196;
+  font-weight: 500;
+  /* padding: 15px; */
+}
+
+.aka-contact-type > img {
+  width: 20%;
+}
+
+.aka-contact-type > p {
+  margin-bottom: 0;
+}
+
+.aka-contact-type > a {
+  /* text-decoration: none; */
+  color: black;
+}
+/* =======Contact Types End   ========= */
+
+.aka-border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+/* =====    Maps And Form Start  ======*/
+.aka-city-name {
+    color: var(--title);
+}
+.aka-address-text>p{
+    margin-bottom: 0rem;
+}
+.aka-address-link > a > img {
+  width: 20%;
+}
+/* =====   Contact Form ========= */
+.aka-contact-us-form{
+  background-color: var(--light-gray);
+}
+
+.aka-contact-us-title{
+  font-size: 1.4rem;
+}
+/* =====    Maps And Form End  ======*/
+
+/*===============
+Responsive Codes 
+================ */
+/* Below 560px  */
+@media (max-width: 35em) {
+  /* =========  Contact Line With WP Number Start =======*/
+  .aka-title-color {
+    background-color: var(--title);
+  }
+  .aka-title-color > p {
+    width: 100%;
+    font-weight: 500;
+    padding: 0 1rem;
+    margin-bottom: 0rem;
+  }
+  .aka-title-color > p > i {
+    border-radius: 50%;
+    font-size: 1rem;
+  }
+  /* =========  Contact Line With WP Number End ======= */
+
+  /* =======  Contact Types Start Start   ====== */
+  .aka-contact-type{
+    margin-bottom: 40px;
+  }
+  /* =======  Contact Types Start End   ====== */
+
+  .aka-border-bottom{
+    display: none;
+  }
+  /* =====    Footer Page Start   ===== */
+  .aka-footer-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .aka-footer-baground {
+    margin-top: 1rem;
+  }
+  /* ====   Footer Page End   ===== */
+}
