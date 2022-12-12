@@ -12,7 +12,7 @@ AZA Colors #00BFFE (blue)
 #0C75FD Dark Blue)
 
 =============================== */
-
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@400;500&family=Tillana&family=Ubuntu&display=swap");
 :root {
   /* Own Color */
   --light-blue: #dff7fa;
@@ -29,6 +29,7 @@ AZA Colors #00BFFE (blue)
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
 
 html {
@@ -148,6 +149,20 @@ body {
 /* ===========  Image Section End   ======== */
 
 /*====  Methodology Start   =====*/
+/* ========= */
+.aka-above-methodology {
+  box-shadow: -0.0625rem 0 0.625rem 0 rgb(0 0 0 / 7%),
+    0.3125rem 1.25rem 2.5rem 0 rgb(0 0 0 / 4%) !important;
+  border-radius: 1rem !important;
+  padding: 20px 10px;
+  margin: 0 10px;
+  height: 100%;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* ========== */
+
 .aka-methodology-active {
   background-color: var(--title);
   color: #ffffff;
@@ -175,19 +190,31 @@ body {
 .aka-methodology:hover * {
   color: white !important;
 }
+.aka-methodology > img {
+  object-fit: cover;
+}
 /*====  Methodology End   ====*/
 
 /*====    Popular Cources Start   =====*/
-
+.aka-all-cources {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.aka-all-cources > li {
+  width: 30%;
+  margin-left: 2%;
+}
 .aka-all-cources > li > a,
 .aka-cources-dow-list > li > a {
   text-decoration: none;
   color: var(--text-color);
 }
 
-.aka-all-cources > li > a:hover,
-.aka-cources-dow-list > li > a:hover {
-  text-decoration: underline;
+.aka-cources-dow-list > li:hover,
+.aka-all-cources > li:hover {
+  box-shadow: 1px 1px 5px var(--dark-blue);
+  cursor: pointer;
 }
 
 .aka-all-cources,
@@ -195,21 +222,34 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
+.aka-cources-dow-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.aka-cources-dow-list > li {
+  width: 48%;
+}
 .aka-all-cources > li,
 .aka-cources-dow-list > li {
   color: #495057;
   border-radius: 2px;
   margin-bottom: 7px;
   padding-left: 18px;
+
   line-height: 26px;
   font-weight: 700;
   box-shadow: 1px 1px 2px #ccc;
   font-family: arial;
   font-size: 12px;
   display: block;
-  background: url(/assets/img/List-styles/vAro.png) 7px 7px no-repeat #fff;
+  border: 1px solid var(--dark-blue);
+  /* background: url(/assets/img/List-styles/vAro.png) 7px 7px no-repeat #fff; */
+  background-color: rgb(250, 250, 250);
   transition: unset;
+}
+.aka-all-cources > li > details > summary {
+  list-style: none;
 }
 
 .aka-cources-info-dow-title,
@@ -227,6 +267,7 @@ body {
 /*====    Popular Cources End     =====*/
 
 /* ====   Learning Options Start ====== */
+
 .aka-learning-iconBox {
   box-shadow: -0.0625rem 0 0.625rem 0 rgb(0 0 0 / 7%),
     0.3125rem 1.25rem 2.5rem 0 rgb(0 0 0 / 4%) !important;
@@ -234,6 +275,10 @@ body {
   padding: 20px 10px;
   height: 100%;
   text-align: center;
+  transition: transform 0.5s;
+}
+.aka-learning-iconBox:hover {
+  transform: translateY(-10px);
 }
 
 .aka-learning-iconBox > a {
@@ -268,14 +313,6 @@ body {
   /* padding: 36px 17px; */
   transition: transform 0.4s ease-in-out;
 }
-.aka-view-all-client-btn {
-  /* background-color: #007bff;
-    border-color: #007bff;
-    color: #fff;
-  padding: 0.2rem 1rem;
-  border-radius: 7px;
-  border: none; */
-}
 .aka-view-all-client-btn:hover {
   background-color: #0069d9;
   border-color: #0062cc;
@@ -300,6 +337,12 @@ body {
 }
 .aka-counters {
   margin: 0 5rem;
+}
+.aka-counters > div img {
+  transition: transform 0.5s;
+}
+.aka-counters > div:hover img {
+  transform: scale(1.2);
 }
 .aka-counters > div > span {
   color: #565656;
@@ -327,10 +370,6 @@ Responsive Codes
   .aka-mobile-navbar-btn {
     display: block;
     z-index: 999;
-  }
-
-  .aka-header {
-    /* position: relative; */
   }
 
   .aka-header .logo {
@@ -391,8 +430,25 @@ Responsive Codes
 }
 
 .aka-light-blue {
-  background: #dff7fa;
-  border: 1px solid #eee;
+  /* background: #dff7fa; */
+  background-image: linear-gradient(
+    -45deg,
+    #00bffe 0% 10%,
+    var(--background) 10% 90%,
+    #0c75fd 90%
+  );
+  border: 1px solid var(--title);
+}
+
+.aka-light-blue-2 {
+  /* background: #dff7fa; */
+  background-image: linear-gradient(
+    45deg,
+    #00bffe 0% 10%,
+    var(--background) 10% 90%,
+    #0c75fd 90%
+  );
+  border: 1px solid var(--title);
 }
 .aka-mail {
   justify-content: space-evenly;
@@ -407,28 +463,31 @@ Responsive Codes
 }
 
 .aka-award {
-  box-shadow: 0 0 10px 0 gray;
-  height: 50vh;
+  box-shadow: 0 0 1px 0 gray;
+  height: 40vh;
   position: relative;
   overflow: hidden;
-  width: 30%;
+  /* width: 30%; */
   margin-bottom: 30px;
   cursor: pointer;
 }
-
+.aka-award > div {
+  color: black;
+}
 .aka-award > .aka-details {
   position: absolute;
   top: 0;
   padding: 10px;
   width: 100%;
   height: 100%;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   display: flex;
   background-color: white;
   border: 1px solid gray;
   left: -100%;
   transition: left 1s;
+  font-size: 14px;
 }
 .aka-award:hover > .aka-details {
   left: 0%;
@@ -445,7 +504,7 @@ Responsive Codes
 }
 .aka-award > img {
   width: 80%;
-  height: 70%;
+  /* height: 70%; */
   border: 0;
   display: inline-block;
   margin: auto;
@@ -453,11 +512,12 @@ Responsive Codes
   top: 30px;
 }
 .aka-award > .extra-width {
-  width: 60%;
+  width: 50%;
 }
 
-.aka-award .aka-light-blue {
-  border: 1px solid #0c74fd59;
+.aka-award .aka-award-title {
+  background-color: white;
+  border-top: 1px solid gainsboro;
   position: absolute;
   bottom: 0;
   width: 100%;

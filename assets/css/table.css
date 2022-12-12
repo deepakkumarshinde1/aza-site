@@ -1,0 +1,51 @@
+:root {
+    /* Own Color */
+    --light-blue: #dff7fa;
+    --border: #74747475;
+    --text-color: #3a3a3a;
+    /* Aza Color */
+    --btn-text-color: #495057;
+    --title: #058ed4;
+    --background: #f5feff;
+    --dark-blue: #0c75fd;
+  }
+.aka-content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    /* min-width: 400px; */
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.aka-content-table thead tr{
+    background-color: var(--dark-blue);
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+.aka-content-table th, 
+.aka-content-table td{
+    padding: 12px 15px;
+}
+
+.aka-content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+.aka-content-table >tbody >tr>td>button{
+    background-color: var(--title);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+}
+.aka-content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.aka-content-table tbody tr:last-of-type{
+    border-bottom: 2px solid var(--title);
+}
+.aka-content-table tbody tr.active-row{
+    font-weight: bold;
+    color: var(--title);
+}
