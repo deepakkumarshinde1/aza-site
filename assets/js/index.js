@@ -8,6 +8,14 @@ const toggleNavbar = () => {
 mobile_nav.addEventListener("click", () => toggleNavbar());
 
 $(function () {
+  $(window).scroll(function () {
+    var sticky = $(".fix-header"),
+      scroll = $(window).scrollTop();
+
+    if (scroll >= 100) sticky.addClass("fixed");
+    else sticky.removeClass("fixed");
+  });
+
   var myCarousalOne = $(".deep-my-carousel");
   myCarousalOne.owlCarousel({
     margin: 0,

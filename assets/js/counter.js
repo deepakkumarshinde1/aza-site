@@ -8,20 +8,20 @@ let certicateTrainingCount = document.getElementById(
 
 let courcesAdded = document.getElementById("aka-cources-add");
 
-let stdTrained = 10000;
+let stdTrained = 5000;
 let stdcount = setInterval(function () {
   stdTrained = stdTrained + 50;
-  if (stdTrained <= 30000) {
+  if (stdTrained <= 10000) {
     stdTrainedEveryMonth.innerHTML = stdTrained + "+";
   } else {
     clearInterval(stdcount);
   }
   console.log(stdTrained);
-}, 1);
+}, 100);
 
 let certified = 0;
 let certificatecount = setInterval(function () {
-  certified = certified + 10;
+  certified = certified + 2;
   if (certified <= 200) {
     certicateTrainingCount.innerHTML = certified + "+";
   } else {
@@ -33,8 +33,8 @@ let certificatecount = setInterval(function () {
 
 let courceAdd = 0;
 let courcesAddCount = setInterval(function () {
-    courceAdd = courceAdd + 150;
-  if (courceAdd <= 3400) {
+    courceAdd = courceAdd + 200;
+  if (courceAdd <= 15000) {
     courcesAdded.innerHTML = courceAdd + "+";
   } else {
     clearInterval(courcesAddCount);
