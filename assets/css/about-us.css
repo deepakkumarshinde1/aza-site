@@ -1,0 +1,27 @@
+.aka-how-we-do,
+.aka-about-us {
+  text-align: justify;
+  word-spacing: 0.3rem;
+  margin: 0 10rem;
+  /* font-size: 1.2rem; */
+}
+
+.aka-methodology-cards {
+  text-align: justify;
+  box-shadow: -0.0625rem 0 0.625rem 0 rgb(0 0 0 / 7%),
+    0.3125rem 1.25rem 2.5rem 0 rgb(0 0 0 / 4%) !important;
+  border-radius: 1rem !important;
+  padding: 10px 30px;
+  margin: 20px 10px;
+  height: 100%;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.5s;
+}
+
+
+.aka-methodology-txt-desc{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}

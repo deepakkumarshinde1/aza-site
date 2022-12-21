@@ -5,7 +5,7 @@ colors
 
 #058ED4 (Main Title)
 
-bagrou
+baground 
 #DFF7FA
 
 AZA Colors #00BFFE (blue)
@@ -40,6 +40,18 @@ html {
 body {
   overflow-x: hidden;
 }
+/* ======  Aza contact detail header start   ====== */
+.aka-contact-detail-header {
+  background-color: var(--dark-blue);
+}
+.aka-contact-detail-email>a,
+.aka-contact-details-mNo,
+.aka-contact-details-social-acc-link{
+  color: var(--background);
+}
+
+
+/* ======  Aza contact detail header start   ====== */
 
 /* owl css */
 
@@ -115,11 +127,9 @@ body {
 .aka-header .aka-logo {
   height: 4.5rem;
 }
-
 .aka-navbar-list {
   list-style: none;
 }
-
 .aka-navbar-link:link,
 .aka-navbar-link:visited {
   display: inline-block;
@@ -207,9 +217,6 @@ body {
   transform: translateY(-10px);
   /* background-color: #0069d9; */
 }
-.aka-methodology:hover * {
-  /* color: white !important; */
-}
 .aka-methodology > img {
   object-fit: cover;
 }
@@ -230,13 +237,11 @@ body {
   text-decoration: none;
   color: var(--text-color);
 }
-
 .aka-cources-dow-list > li:hover,
 .aka-all-cources > li:hover {
   box-shadow: 1px 1px 5px var(--dark-blue);
   cursor: pointer;
 }
-
 .aka-all-cources,
 .aka-cources-dow-list {
   padding-left: 1rem;
@@ -271,16 +276,13 @@ body {
 .aka-all-cources > li > details > summary {
   list-style: none;
 }
-
 .aka-cources-info-dow-title,
 .aka-cources-title {
   background-color: var(--title);
 }
-
 .aka-all-cources {
   list-style: none;
 }
-
 .aka-cource-list-style {
   list-style: none;
 }
@@ -300,7 +302,6 @@ body {
 .aka-learning-iconBox:hover {
   transform: translateY(-10px);
 }
-
 .aka-learning-iconBox > a {
   text-decoration: none;
   color: black;
@@ -473,16 +474,6 @@ Responsive Codes
   border: 1px solid var(--title);
 }
 
-.aka-light-blue-2 {
-  /* background: #dff7fa; */
-  background-image: linear-gradient(
-    45deg,
-    #00bffe 0% 10%,
-    var(--background) 10% 90%,
-    #0c75fd 90%
-  );
-  border: 1px solid var(--title);
-}
 .aka-mail {
   justify-content: space-evenly;
   background-color: var(--light-blue);
