@@ -10,21 +10,6 @@
   --light-gray: #e9ecef;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  /* font-size: 62.5%; */
-  overflow-x: hidden;
-}
-
-body {
-  overflow-x: hidden;
-}
-
 .aka-light-gray {
   background-color: var(--light-gray);
 }
@@ -105,43 +90,3 @@ body {
 }
 /* =====    Maps And Form End  ======*/
 
-/*===============
-Responsive Codes 
-================ */
-/* Below 560px  */
-@media (max-width: 35em) {
-  /* =========  Contact Line With WP Number Start =======*/
-  .aka-title-color {
-    background-color: var(--title);
-  }
-  .aka-title-color > p {
-    width: 100%;
-    font-weight: 500;
-    padding: 0 1rem;
-    margin-bottom: 0rem;
-  }
-  .aka-title-color > p > i {
-    border-radius: 50%;
-    font-size: 1rem;
-  }
-  /* =========  Contact Line With WP Number End ======= */
-
-  /* =======  Contact Types Start Start   ====== */
-  .aka-contact-type{
-    margin-bottom: 40px;
-  }
-  /* =======  Contact Types Start End   ====== */
-
-  .aka-border-bottom{
-    display: none;
-  }
-  /* =====    Footer Page Start   ===== */
-  .aka-footer-menu {
-    display: flex;
-    flex-direction: column;
-  }
-  .aka-footer-baground {
-    margin-top: 1rem;
-  }
-  /* ====   Footer Page End   ===== */
-}

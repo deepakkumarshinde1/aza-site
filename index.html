@@ -37,9 +37,9 @@
             class="d-flex justify-content-end pt-2 pb-2 aka-contact-detail-header"
           >
             <div class="aka-contact-detail-email">
-              <a href=""
+              <a href="mailto:info@azatech.co.in"
                 ><i class="fa fa-envelope-o pe-2" aria-hidden="true"></i
-                >azatech@gmail.com</a
+                >info@azatech.co.in</a
               >
             </div>
             <div class="ps-4 aka-contact-details-mNo">
@@ -49,6 +49,12 @@
             <div class="aka-contact-details-social-acc-link">
               <div>
                 Follow US:
+                <a href=""
+                  ><i
+                    class="fa fa-instagram text-white ps-2"
+                    aria-hidden="true"
+                  ></i
+                ></a>
                 <a href=""
                   ><i
                     class="fa fa-twitter text-white ps-2"
@@ -79,10 +85,10 @@
             class="aka-logo"
           />
 
-          <nav class="aka-navbar">
-            <ul class="d-flex gap-lg-5 aka-navbar-list mb-0">
+          <nav class="aka-navbar navbar">
+            <ul class="d-flex gap-lg-5 navbar-nav aka-navbar-list mb-0">
               <li>
-                <a class="aka-navbar-link" href="#"
+                <a class="aka-navbar-link" href="/index.html"
                   ><i class="fa fa-home pe-1" aria-hidden="true"></i>Home</a
                 >
               </li>
@@ -90,15 +96,22 @@
                 <a
                   class="aka-navbar-link"
                   href="/assets/html/about-us/about-us.html"
-                  ><i class="fa fa-info pe-1" aria-hidden="true"></i>About</a
+                  ><i class="fa fa-info pe-1" aria-hidden="true"></i>About Us</a
                 >
               </li>
-              <li>
-                <a class="aka-navbar-link" href="#"
-                  ><i class="fa fa-users pe-1" aria-hidden="true"></i>Public
-                  Batches</a
-                >
+
+              <!-- DropDown Our Services Section Start -->
+              <li class="aka-dropdown">
+                <a class="aka-dropdown-btn aka-navbar-link" href="#">Our Services <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                </a>
+                <ul class=" list-unstyled aka-dropdown-content">
+                  <li><a href="">Training</a></li>
+                  <li><a href="/assets/html/Our Services/AZA Cloud/aza-cloud.html">Aza Cloud</a></li>
+                  <li><a href="/assets/html/Our Services/Global Certification/global-certificate.html">Global Certifications</a></li>
+                </ul>
               </li>
+              <!-- DropDown Our Services Section End -->
+
               <li>
                 <a class="aka-navbar-link" href="#"
                   ><i class="fa fa-user-secret pe-1" aria-hidden="true"></i>Want
@@ -108,7 +121,7 @@
               <li>
                 <a
                   class="aka-navbar-link"
-                  href="/assets/html/contact-us/contact-us.html"
+                  href="/assets/html/contact-us/contact-us-sec.html"
                   ><i class="fa fa-phone pe-1" aria-hidden="true"></i>Contact
                   Us</a
                 >

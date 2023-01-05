@@ -1,0 +1,24 @@
+.aka-cloud-img {
+  /* background-image: url("/assets/img/Banner Images/cloud-computing.jpeg"); */
+  /* background-size: cover; */
+  /* object-fit: cover; */
+  width: 10rem;
+  height: 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aka-universal-access {
+  /* background-image: url("/assets/img/AZA Cloud/Universal Access/images.jpg"); */
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  /* height: 100rem; */
+  /* background-position: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

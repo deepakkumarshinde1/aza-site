@@ -1,0 +1,128 @@
+:root {
+  /* Own Color */
+  --light-blue: #dff7fa;
+  --border: #74747475;
+  /* Aza Color */
+  --btn-text-color: #495057;
+  --title: #058ed4;
+  --background: #f5feff;
+  --dark-blue: #0c75fd;
+  --light-gray: #e9ecef;
+}
+.aka-contact-type-new-design>img{
+  width: 20%;
+}
+
+.aka-contact-type-new-design, .aka-contact-type-new-design::before, .aka-contact-type-new-design::after{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.aka-frm-office-address{
+  margin-top: 10rem;
+}
+.aka-contact-type-new-design{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  /* margin: 20px; */
+  /* background: url('//blog.codepen.io/wp-content/uploads/2012/06/Button-White-Large.png') no-repeat 50% / 70% rgba(0, 0, 0, .1); */
+  color: var(--dark-blue);
+  /* box-shadow: inset 0 0 0 1px rgba(105, 202, 98, .5); */
+  box-shadow: inset 0 0 0 1px #0c75fd;
+}
+.aka-contact-type-new-design::before, .aka-contact-type-new-design::after {
+  content: '';
+  z-index: -1;
+  margin: -5%;
+  box-shadow: inset 0 0 0 2px;
+  animation: clipMe 8s linear infinite;
+}
+.aka-contact-type-new-design::before {
+  animation-delay: -4s;
+}
+
+@keyframes clipMe {
+  0%, 100% {
+      clip: rect(0px, 220px, 2px, 0px);
+ }
+  25% {
+      clip: rect(0px, 2px, 220px, 0px);
+ }
+  50% {
+      clip: rect(218px, 220px, 220px, 0px);
+ }
+  75% {
+      clip: rect(0px, 220px, 220px, 218px);
+ }
+}
+.aka-contact-type-new-design>a{
+  color: black;
+}
+
+.aka-contact-type-new-design-two>img{
+  width: 17%;
+}
+
+.aka-title-color {
+  background-color: var(--title);
+  width: 100%;
+}
+.aka-title-color > p {
+  width: fit-content;
+  font-weight: 500;
+  padding: 0 1rem;
+  margin-bottom: 0rem;
+}
+.aka-title-color > p > i {
+  border-radius: 50%;
+  font-size: 1.3rem;
+}
+.aka-light-gray {
+  background-color: var(--light-gray);
+}
+.aka-path-location > a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 0rem;
+}
+.aka-path-location > a > i {
+  background-color: var(--title);
+}
+
+/* =======Contact Types Start   ========= */
+.aka-contact-types {
+  padding: 0 15px;
+}
+
+.aka-contact-type {
+  border: 1px solid #dcbafd;
+  box-shadow: 1px 4px 20px -9px #49358196;
+  font-weight: 500;
+}
+
+.aka-contact-type > img {
+  width: 20%;
+}
+
+.aka-contact-type > p {
+  margin-bottom: 0;
+}
+
+.aka-contact-type > a {
+  color: black;
+}
+/* =======Contact Types End   ========= */
+.aka-branch-office {
+  box-shadow: 0 -2px 25px 3px rgb(0 0 0 / 20%);
+}
+.aka-contact-frm-input > input{
+  width: 100%;
+}
+.aka-contact-frm-input:focus{
+  border: none;
+}
