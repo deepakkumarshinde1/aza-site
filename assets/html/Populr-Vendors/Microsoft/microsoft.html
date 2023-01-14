@@ -22,45 +22,135 @@
   </head>
   <body>
     <main id="main" class="container-fluid">
-      <!-- =====  Navbar Start  =======-->
-      <div class="container">
+      <!--====   Contact Details Hearder Start    ==== -->
+      <div class="container-fluid">
         <div class="row">
-          <header
-            class="d-flex justify-content-between align-items-center bg-white aka-header"
+          <div
+            class="d-flex justify-content-end pt-2 pb-2 aka-contact-detail-header"
           >
-            <img
-              src="/assets/img/AZA Logos/AZA LOGO PNG.png"
-              alt="AZA Logo"
-              class="aka-logo"
-            />
-
-            <nav class="aka-navbar">
-              <ul class="d-flex gap-5 aka-navbar-list">
-                <li><a class="aka-navbar-link" href="#">Home</a></li>
-                <li><a class="aka-navbar-link" href="#">About</a></li>
-                <li><a class="aka-navbar-link" href="#">Public Batches</a></li>
-                <li>
-                  <a class="aka-navbar-link" href="/assets/html/contact-us.html"
-                    >Contact Us</a
-                  >
-                </li>
-              </ul>
-            </nav>
-
-            <div class="aka-mobile-navbar-btn">
-              <ion-icon
-                name="menu-outline"
-                class="aka-mobile-nav-icon"
-              ></ion-icon>
-              <ion-icon
-                name="close-outline"
-                class="aka-mobile-nav-icon"
-              ></ion-icon>
+            <div class="aka-contact-detail-email">
+              <a href="mailto:info@azatech.co.in"
+                ><i class="fa fa-envelope-o pe-2" aria-hidden="true"></i
+                >info@azatech.co.in</a
+              >
             </div>
-          </header>
+            <div class="ps-4 aka-contact-details-mNo">
+              <i class="fa fa-phone" aria-hidden="true"></i> +91 7338381310
+            </div>
+            <div class="ps-2 pe-2 text-white">|</div>
+            <div class="aka-contact-details-social-acc-link">
+              <div>
+                Follow US:
+                <!-- <a href=""
+                        ><i
+                          class="fa fa-instagram text-white ps-2"
+                          aria-hidden="true"
+                        ></i
+                      ></a> -->
+                <a href=""
+                  ><i
+                    class="fa fa-linkedin text-white ps-2"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <a href=""
+                  ><i
+                    class="fa fa-twitter text-white ps-2"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- ==== Navbar Close  =========-->
+      <!--====   Contact Details Hearder End    ==== -->
+      
+      <!-- ====  Navbar Start  ====-->
+      <div class="row fix-header">
+        <header
+          class="col-12 m-auto d-flex justify-content-between align-items-center bg-white aka-header"
+        >
+          <img
+            src="/assets/img/AZA Logos/AZA LOGO PNG.png"
+            alt="AZA Logo"
+            class="aka-logo"
+          />
+
+          <nav class="aka-navbar navbar">
+            <ul class="d-flex gap-lg-5 navbar-nav aka-navbar-list mb-0">
+              <li>
+                <a class="aka-navbar-link" href="/index.html"
+                  ><i class="fa fa-home pe-1" aria-hidden="true"></i>Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="aka-navbar-link"
+                  href="/assets/html/about-us/about-us.html"
+                  ><i class="fa fa-info pe-1" aria-hidden="true"></i>About Us</a
+                >
+              </li>
+
+              <!-- DropDown Our Services Section Start -->
+              <li class="aka-dropdown">
+                <a class="aka-dropdown-btn aka-navbar-link" href="#"
+                  >Our Services
+                  <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                </a>
+                <ul class="list-unstyled aka-dropdown-content">
+                  <li>
+                    <a href="/assets/html/Our Services/Training/training.html"
+                      >Training</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/assets/html/Our Services/AZA Cloud/aza-cloud.html"
+                      >Aza Cloud</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/assets/html/Our Services/Global Certification/global-certificate.html"
+                      >Global Certifications</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- DropDown Our Services Section End -->
+
+              <li>
+                <a
+                  class="aka-navbar-link"
+                  href="/assets/html/Want to become trainer/becomeatrainer.html"
+                  ><i class="fa fa-user-secret pe-1" aria-hidden="true"></i>Want
+                  To Become Trainer ?</a
+                >
+              </li>
+              <li>
+                <a
+                  class="aka-navbar-link"
+                  href="/assets/html/contact-us/contact-us-sec.html"
+                  ><i class="fa fa-phone pe-1" aria-hidden="true"></i>Contact
+                  Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="aka-mobile-navbar-btn">
+            <ion-icon
+              name="menu-outline"
+              class="aka-mobile-nav-icon"
+            ></ion-icon>
+            <ion-icon
+              name="close-outline"
+              class="aka-mobile-nav-icon"
+            ></ion-icon>
+          </div>
+        </header>
+      </div>
+      <!-- ==== Navbar Close  ====-->
 
       <!-- ==== Path Show Start   ======= -->
       <div class="container-fluid aka-light-gray">
@@ -133,52 +223,33 @@
               <li>AZ-100: Microsoft Azure Infrastructure and Deployment</li>
               <li>AZ-103: Azure Administrator Associate</li>
               <li>AZ-203: Developing Solutions for Microsoft Azure</li>
-              <li>AZ-300: Microsoft Azure Architect Technologies
+              <li>AZ-300: Microsoft Azure Architect Technologies</li>
+              <li>AZ-301: Microsoft Azure Architect Design</li>
+              <li>AZ-400: Microsoft Azure DevOps Solutions</li>
+              <li>AZ-500: Microsoft Azure Security Technologies</li>
+              <li>AI-100: Designing and Implementing an Azure AI Solution</li>
+              <li>
+                DP-100: Designing and Implementing a Data Science Solution on
+                Azure
               </li>
-              <li>AZ-301: Microsoft Azure Architect Design
-              </li>
-              <li>AZ-400: Microsoft Azure DevOps Solutions
-              </li>
-              <li>AZ-500: Microsoft Azure Security Technologies
-              </li>
-              <li>AI-100: Designing and Implementing an Azure AI Solution
-              </li>
-              <li>DP-100: Designing and Implementing a Data Science Solution on Azure
-              </li>
-              <li>DP-203: Data Engineering on Microsoft Azure
-              </li>
-              <li>773: Analyzing Big Data with Microsoft R
-              </li>
+              <li>DP-203: Data Engineering on Microsoft Azure</li>
+              <li>773: Analyzing Big Data with Microsoft R</li>
             </div>
             <div class="col-6">
-              <li>IBM Notes Traveler
-              </li>
-              <li>IBM Lotus Symphony
-              </li>
-              <li>IBM PureQuery
-              </li>
-              <li>IBM Rational Asset Manager
-              </li>
-              <li>IBM Rational Business Developer Extension
-              </li>
-              <li>IBM Rational Rose XDE
-              </li>
-              <li>IBM Rational Software Architect
-              </li>
-              <li>IBM Tivoli Directory Server
-              </li>
-              <li>IBM Tivoli Storage Manager
-              </li>
-              <li>IBM WebSphere Commerce
-              </li>
-              <li>IBM Works
-              </li>
-              <li>IBM Tivoli Workload Scheduler
-              </li>
-              <li>IBM Rational Application Developer
-              </li>
-              <li>Software Testing Automation Framework
-              </li>
+              <li>IBM Notes Traveler</li>
+              <li>IBM Lotus Symphony</li>
+              <li>IBM PureQuery</li>
+              <li>IBM Rational Asset Manager</li>
+              <li>IBM Rational Business Developer Extension</li>
+              <li>IBM Rational Rose XDE</li>
+              <li>IBM Rational Software Architect</li>
+              <li>IBM Tivoli Directory Server</li>
+              <li>IBM Tivoli Storage Manager</li>
+              <li>IBM WebSphere Commerce</li>
+              <li>IBM Works</li>
+              <li>IBM Tivoli Workload Scheduler</li>
+              <li>IBM Rational Application Developer</li>
+              <li>Software Testing Automation Framework</li>
             </div>
           </div>
         </div>

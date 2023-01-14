@@ -1,0 +1,41 @@
+:root {
+    /* Own Color */
+    --light-blue: #dff7fa;
+    --border: #74747475;
+    --text-color: #3a3a3a;
+    /* Aza Color */
+    --btn-text-color: #495057;
+    --title: #058ed4;
+    --background: #f5feff;
+    --dark-blue: #0c75fd;
+  }
+.aka-list-style-arrow-blue > li {
+  list-style: url("/assets/img/arrow-list-style.png");
+}
+.aka-list-style-arrow-blue {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.aka-list-style-arrow-blue > li {
+  width: 30%;
+  margin-left: 2%;
+}
+.aka-cource-card-training-page>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.aka-cource-card-training-page>ul>li{
+    width: 48%;
+    margin-left: 2%;
+}
+.aka-cource-card-training-page{
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.aka-cource-card-training-page>p{
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+ background-color: var(--title);
+}
