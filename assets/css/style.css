@@ -143,7 +143,20 @@ body {
 .aka-navbar-link:active {
   color: var(--dark-blue);
 }
+.aka-navbar-link-btm:link,
+.aka-navbar-link-btm:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  transition: all 0.3s;
+}
 
+.aka-navbar-link-btm:hover,
+.aka-navbar-link-btm:active {
+  color: var(--dark-blue);
+}
 .aka-mobile-navbar-btn {
   display: none;
   background: transparent;
@@ -605,7 +618,7 @@ Responsive Codes
 }
 
 .aka-security-text {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .aka-all-rights-reserved {

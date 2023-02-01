@@ -5,7 +5,6 @@
   margin: 0 10rem;
   /* font-size: 1.2rem; */
 }
-
 .aka-methodology-cards {
   text-align: justify;
   box-shadow: -0.0625rem 0 0.625rem 0 rgb(0 0 0 / 7%),
@@ -18,8 +17,6 @@
   background-color: #fff;
   transition: transform 0.5s;
 }
-
-
 .aka-methodology-txt-desc{
     display: flex;
     align-items: center;
