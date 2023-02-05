@@ -205,6 +205,14 @@ body {
 .aka-dropdown:hover .aka-dropdown-content {
   display: block;
 }
+.aka-footer-our-services{
+  background-color: #0d355a;
+  border-bottom: 1px solid #3ca1ff;
+}
+.aka-footer-our-services > a{
+  color: white;
+}
+
 /* ===========  Navbar End   ======== */
 
 /* =========== Image Section Start   ======== */
@@ -435,6 +443,33 @@ body {
   color: black !important;
   padding: 0;
   margin: 0;
+}
+.aka-testimonials{
+  background-color: rgb(58,58,58);
+  border-radius: 10px;
+}
+.aka-testimonial-txt{
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.card-text{
+  text-align: justify;
+}
+.card-body{
+  background-color: #3a3a3a;
+  color: rgb(255, 255, 255);
+  display: flex;
+  /* align-items: center; */
+}
+.card{
+  margin: 0 10px;
+  height: 20rem;
+}
+.card-footer{
+  background-color: #3a3a3a;
+  border-radius: 20px;
 }
 
 /* ===========================================
