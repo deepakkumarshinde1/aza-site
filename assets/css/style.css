@@ -454,21 +454,26 @@ body {
   justify-content: center;
   /* align-items: center; */
 }
+.card{
+  position: relative;
+}
+.aka-testimonial-user-img{
+  position: absolute;
+  bottom: 5.9rem;
+  left: 17rem;
+}
 .card-text{
   text-align: justify;
 }
 .card-body{
-  background-color: #3a3a3a;
-  color: rgb(255, 255, 255);
   display: flex;
-  /* align-items: center; */
 }
 .card{
-  margin: 0 10px;
-  height: 20rem;
+  margin: 0 20px;
+  height: 28rem;
 }
 .card-footer{
-  background-color: #3a3a3a;
+  background-color: white;
   border-radius: 20px;
 }
 
